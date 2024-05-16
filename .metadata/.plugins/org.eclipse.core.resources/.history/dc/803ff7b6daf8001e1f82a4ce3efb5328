@@ -1,0 +1,48 @@
+package ex9_11;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class ex9_11 {
+
+	public static void main(String[] args) {
+		HashMap<String, Integer> contactes = new HashMap<>();
+		Scanner scanner = new Scanner(System.in);
+		int opcion;
+		
+		do {
+			System.out.println("1--> Mostrar tots el contactes");
+			System.out.println("2--> Afeguir un nou contacte");
+			System.out.println("3--> Cercar un contacte per el nom");
+			System.out.println("4--> EXIT");
+			opcion = scanner.nextInt();
+			
+			switch (opcion) {
+				case 1:
+					mostrarContactes(contactes);
+					break;
+				case 2:
+					afeguirContacte(contactes, scanner);
+					break;
+				case 3:
+					cercarContacte(contactes, scanner);
+				case 4:
+					System.out.println("EXIT.");
+					break;
+			}
+		}while (opcion !=4);
+	}
+
+	private static void cercarContacte(HashMap<String, Integer> contactes, Scanner scanner) {
+		System.out.println("Posa el nom del contacte:");
+	}
+
+	private static void afeguirContacte(HashMap<String, Integer> contactes, Scanner scanner) {
+		
+	}
+
+	private static void mostrarContactes(HashMap<String, Integer> contactes) {
+		
+	}
+
+}

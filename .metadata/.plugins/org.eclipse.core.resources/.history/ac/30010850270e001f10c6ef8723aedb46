@@ -1,0 +1,31 @@
+package ex11_2;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class ex11_2 {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("FlowLayoutDemo");
+			JPanel finestra = (JPanel) frame.getContentPane();
+			finestra.setLayout(new FlowLayout());
+			
+			JLabel counter = new JLabel("Counter: ");
+			JTextField text = new JTextField("0");
+			
+			
+			
+			finestra.add(counter);
+			finestra.add(text);
+			
+			finestra.setSize(10, 20);
+			frame.pack();
+			frame.setVisible(true);
+	}
+
+}

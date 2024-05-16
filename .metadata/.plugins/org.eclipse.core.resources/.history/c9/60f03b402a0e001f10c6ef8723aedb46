@@ -1,0 +1,29 @@
+package ex11_3;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class ex11_3 {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("BorderLayoutDemo");
+			JPanel pane = (JPanel) frame.getContentPane();
+			pane.setLayout(new BorderLayout());
+			
+			JButton button = new JButton("Boton1 (PAGE_START)");
+			pane.add(button, BorderLayout.PAGE_START);
+			
+			button = new JButton("Boton2 (CENTER)");
+			button.setPreferredSize(new Dimension(200, 100));
+			pane.add(button, BorderLayout.CENTER);
+			
+			
+			frame.pack();
+			frame.setVisible(true);
+	}
+
+}

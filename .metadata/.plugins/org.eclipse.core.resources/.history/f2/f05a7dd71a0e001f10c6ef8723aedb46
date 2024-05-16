@@ -1,0 +1,45 @@
+package Calculadora;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+		//Frame
+		JFrame calculadora = new JFrame("Calculadora");
+		
+		//Panel calculadora
+		JPanel panel = (JPanel) calculadora.getContentPane();
+		
+		//display calculadora
+		JLabel display = new JLabel();
+		display.setHorizontalAlignment(SwingConstants.RIGHT);
+		panel.add(display);
+		
+		//panel auxiliar on posar botons
+		JPanel panelBotons = new JPanel();
+		JButton boto7 = new JButton("7");
+		JButton boto8 = new JButton("7");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		calculadora.pack();
+		calculadora.setVisible(true);
+	}
+
+	
+
+}

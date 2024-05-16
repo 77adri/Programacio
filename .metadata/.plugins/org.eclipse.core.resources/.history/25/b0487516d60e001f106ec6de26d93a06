@@ -1,0 +1,48 @@
+package ex11_3;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class ex11_3 {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("BorderLayoutDemo");
+			JPanel pane = (JPanel) frame.getContentPane();
+			pane.setLayout(new BorderLayout());
+			
+			
+			JButton button = new JButton("Boton1 (PAGE_START)");
+			pane.add(button, BorderLayout.PAGE_START);
+			
+			JPanel paneGrid = (JPanel) frame.getContentPane();
+			pane.setLayout(new GridLayout(0,2));
+			JButton button2 = new JButton("Button 1");
+			pane.add(button);
+			button = new JButton("Button 2");
+			pane.add(button);
+			button = new JButton("Button 3");
+			pane.add(button);
+			button = new JButton("Button 4");
+			pane.add(button);
+			button = new JButton("Button 5");
+			pane.add(button);
+			
+			button = new JButton("Boton3 (LINE_START)");
+			pane.add(button, BorderLayout.LINE_START);
+			
+			button = new JButton("Long-Named Button 4 (PAGE_END)");
+			pane.add(button, BorderLayout.PAGE_END);
+			
+			button = new JButton("5 (LINE_END)");
+			pane.add(button, BorderLayout.LINE_END);
+			
+			frame.pack();
+			frame.setVisible(true);
+	}
+
+}

@@ -1,0 +1,14 @@
+package edud7;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class testDivideixTest {
+
+	@Test
+	void testDivideix() {
+		fail("Not yet implemented");
+	}
+
+}
